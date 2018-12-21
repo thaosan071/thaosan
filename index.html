@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Travel</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="welcome-section content-hidden">
+		<div class="content-wrap">
+		<ul class="fly-in-text">
+			<li>T</li>
+			<li>R</li>
+			<li>A</li>
+			<li>V</li>
+			<li>E</li>
+			<li>L</li>
+		</ul>
+		</div>
+		<a href="home.php" class="enter-button"><svg><rect></rect></svg><span class="neon" data-text="Home">Home</span></a>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			var welcomeSection = $('.welcome-section'),
+				enterButton = welcomeSection.find('.enter-button');
+				setTimeout(function(){
+					welcomeSection.removeClass('content-hidden');
+				},800);
+
+				enterButton.on('click', function(e){
+					e.preventDefault();
+					welcomeSection.addClass('content-hidden').fadeOut();
+					window.location="home.php";
+				});
+		});
+	</script>
+</body>
+</html>
