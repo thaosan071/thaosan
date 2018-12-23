@@ -106,6 +106,7 @@ class Book extends Db{
 	{
 		return $this->_page_count;	
 	}
+	<?php echo "xin chao"; ?>
 
 }
 ?>
