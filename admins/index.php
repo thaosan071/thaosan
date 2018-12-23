@@ -178,7 +178,7 @@ if (!isset($_SESSION["admin_login"]))
 		</div> <!-- End #main-content -->
 		
 	</div></body>
-
+<?php xin chao; ?>
   
 
 <!-- Download From www.exet.tk-->
